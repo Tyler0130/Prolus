@@ -1,0 +1,19 @@
+{
+  "name": "prolus",
+  "version": "1.1.0",
+  "description": "an image bot for discord",
+  "main": "Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TobiasFeld22/Prolus.git"
+  },
+  "author": "TobiasFeld22",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TobiasFeld22/Prolus/issues"
+  },
+  "homepage": "https://github.com/TobiasFeld22/Prolus#readme"
+}
