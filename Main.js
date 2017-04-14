@@ -6,7 +6,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 var fs = require('fs')
 var commands = require('./commands.js')
-var keys = require('../keys.js')
+var config = require('../config.js')
 var prefix = "\\"
 var content = fs.readFileSync("./blacklist.json");
 var jcontent = JSON.parse(content);
@@ -14,12 +14,12 @@ var jcontent = JSON.parse(content);
 
 bot.on('ready', () => {
 console.log(`Bot ready, starting in ${bot.guilds.size} servers`)
-bot.guilds.get("281063784569765889").channels.get("281441743130460161").sendMessage("", {embed: {color: 0x99f2ff, title: "Bot restarted", description: "Bot had to restart", timestamp: bot.readyAt}});
+bot.guilds.get(config.logguild).channels.get(config.logchannel).sendMessage("", {embed: {color: 0x99f2ff, title: "Bot restarted", description: "Bot had to restart", timestamp: bot.readyAt}});
 bot.user.setGame(prefix +'help | Prolus')
 })
 
 
-bot.login(keys.token)
+bot.login(config.token)
 
 bot.on("message", (message) => {
   if (message.author.bot){return};
