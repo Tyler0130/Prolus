@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/TobiasFeld22/Prolus/issues"
   },
-  "homepage": "https://github.com/TobiasFeld22/Prolus#readme"
+  "homepage": "https://github.com/TobiasFeld22/Prolus#readme",
+  "dependencies": {
+    "discord.js": "^11.0.0",
+    "is-alphanumeric": "^1.0.0"
+  }
 }
